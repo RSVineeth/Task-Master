@@ -1,0 +1,345 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+article{
+    background-color: rgb(97, 73,120);
+    border: 1px solid rgb(83, 73, 73);
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+article h1{
+    font-size: 20px;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+article main{
+    display: flex;
+}
+
+article main form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+article main form label{
+    color: white;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+article main form input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border:1px solid rgb(46, 45, 45);
+}
+
+article main form button{
+    background-color: rgb(244, 239, 239);
+    border:1px solid rgb(75, 74, 74);
+    width:100%;
+    margin: 20px 0;
+    padding: 10px;
+} */
+
+/* css for todo */
+/* .todo h2{
+    font-size: 20px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 300;
+    border-bottom: 1px solid rgb(220, 210, 210);
+} */
+
+/* .todo table{ */
+    /* width:100%; */
+    /* border: 1px solid rgb(45, 44 44); */
+    /* padding: 10px; */
+/* } */
+
+/* .todo thead{
+    padding: 10px;
+}
+
+.todo table tr,th,td{
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: fit-content;
+    padding: 10px;
+    color: whitesmoke;
+} */
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f0f0f0; /* Added a light background color */
+}
+
+/* .form-group {
+    width: 40vh;
+} */
+
+/* Form.css */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  #button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+article {
+    background-color: #514978;
+    border: 1px solid #535353;
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 8px; /* Added border-radius for a smoother look */
+    overflow: hidden; /* Ensure rounded corners are applied */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added box shadow for depth */
+}
+article h1 {
+    font-size: 24px; /* Increased font size for the heading */
+    color: #f5f5f5;
+    text-transform: uppercase;
+    padding: 15px; /* Added padding for better spacing */
+}
+
+article main {
+    display: flex;
+}
+
+article main form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #8a6ac8; /* Added background color to the form */
+    flex: 1; /* Allow the form to take up remaining space */
+    width: 80%; /* Adjust width of the form */
+}
+
+article main form label {
+    color: #f5f5f5;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+article main form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #2e2d2d;
+    transition: border-color 0.3s ease; /* Added a smooth transition for input border */
+}
+
+article main form input:focus {
+    border-color: #7552b0; /* Highlight input border on focus */
+}
+
+article main form button {
+    background-color: #f4efef;
+    border: 1px solid #4b4a4a;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    cursor: pointer; /* Added a pointer cursor for better usability */
+    transition: background-color 0.3s ease; /* Smooth transition for button background */
+}
+
+article main form button:hover {
+    background-color: #4caf50; /* Change background color on hover */
+}
+
+/* CSS for todo */
+
+.todo h2 {
+    text-align:center;
+    font-size: 24px;
+    color: #f5f5f5;
+    text-transform: uppercase;
+    padding: 15px;
+    font-weight: 300;
+    border-bottom: 1px solid #dcd2d2;
+}
+
+.todo table {
+    width: 120vh;
+}
+
+.todo thead {
+    padding: 10px;
+    background-color: #7552b0;
+}
+
+.todo table tr,
+.todo table th,
+.todo table td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: fit-content;
+    padding: 10px;
+    color: #f5f5f5;
+    background-color: #635a7b;
+    text-align: center;
+    vertical-align: middle;
+    transition: background-color 0.3s ease;
+}
+
+.todo table tr:hover {
+    background-color: #7552b0;
+}
+
+/* Add space between delete and update buttons */
+.todo table tr td button {
+    margin-right: 5px; /* Adjust the margin to create space */
+}
+
+/* TodoList.css */
+
+.todo {
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .action-button {
+    padding: 6px 12px;
+    margin-right: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .update-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .form-container {
+      width: 100%;
+    }
+  }
+  
+
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* Apply hover effects */
+
+/* For buttons */
+article main form button:hover {
+    background-color: #4caf50; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* For input fields */
+article main form input:hover {
+    border-color: #7552b0; /* Change border color on hover */
+}
+
+/* CSS */
+.action-button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .update-button {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  .action-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  

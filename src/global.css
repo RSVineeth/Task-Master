@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+body {
+    /* @apply font-sans; */
+    background-color: #f0f0f0;
+}
+
+form {
+    @apply mx-auto bg-white p-8 rounded-lg shadow-md transition duration-300 ease-in-out hover:shadow-lg;
+}
+
+.form-group {
+    @apply mb-6;
+}
+
+label {
+    @apply block mb-2 font-bold text-gray-700;
+}
+
+.inp input,
+.inp textarea {
+    @apply w-full p-3 border rounded transition duration-300 ease-in-out focus:border-blue-500;
+}
+
+.inp input:focus,
+.inp textarea:focus {
+    @apply outline-none border-blue-500;
+}
+
+.form-error {
+    @apply text-red-600 text-xs mt-2;
+}
+
+.buttonContainer button {
+    @apply cursor-pointer p-3 border-none rounded text-white transition duration-300 ease-in-out hover:bg-red-700;
+}
